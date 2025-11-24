@@ -90,11 +90,11 @@ public class MainVehicul {
 //cod Mihaluta Andrei
 
        Vehicul[] masini = {
-                new Vehicul("BMW", 30000),
-                new Vehicul("MERCEDES", 80000),
+                new Vehicul("Dacia", 30000),
+                new Vehicul("BMW", 80000),
                 new Vehicul("Audi", 45000),
                 new Vehicul("Renault", 28000),
-                new Vehicul("VOLKSWAGEN", 60000)
+                new Vehicul("BMW", 60000)
         };
 
         String marcaInterzisa = "BMW";
@@ -188,5 +188,23 @@ public class MainVehicul {
         //Cod Isaia George ^
         
     }
-    
+              //cod DragneaCristianRomeo
+ Trotineta[] trotinete = new Trotineta[5];
+    trotinete[0] = new Trotineta("Xiaomi", 500.0f, 300, (byte)50);
+    trotinete[1] = new Trotineta("Kukirin", 250.0f, 600, (byte)80);
+    trotinete[2] = new Trotineta("Razer", 150.0f, 250, (byte)65);
+    trotinete[3] = new Trotineta("Ryde", 3080.0f, 500, (byte)24);
+    trotinete[4] = new Trotineta("", 250.0f, 500, (byte)17);
+
+    Scanner sc = new Scanner(System.in);
+        System.out.println("Introduceti maxim pret: ");
+    float pret = sc.nextFloat();
+        System.out.println("Introduceti maxim autonomie acumulator");
+    int autonomie = sc.nextByte();
+        for(Trotineta a : trotinete){
+        if(a.verifiPret(pret) && a.verificaAutonomieAcc(autonomie)){
+            System.out.println(a);
+        }
+    }
+    //cod DragneaCristianRomeo
 }
