@@ -68,5 +68,9 @@ public class Trotineta extends Vehicul implements Reincarcabil{
         }
     }
 //Cod Sumurduc Aurelian-Andrei
-
+//cod Dragnea Cristian Romeo
+    public boolean verifAutonomieAcc(byte autonomieAcumulator) {
+        return this.autonomieAcumulator < autonomieAcumulator;
+        //cod Dragnea Cristian Romeo
+    }
     }
